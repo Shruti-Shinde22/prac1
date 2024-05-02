@@ -1,0 +1,252 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+        }
+        .nav{
+            border: 1px solid black;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: rgb(37, 36, 36);
+            height: 70px;
+            padding: 0 20px;
+        }
+        .nav h1{
+            color: white;
+        }
+        .nav div{
+            display: flex;
+            list-style: none;
+        }
+        .nav div li{
+            margin-left: 20px;
+        }
+
+        .nav div li a{
+            color: white;
+            text-decoration: none;
+        }
+        .table{
+            border-top: 1px solid black;
+            border-bottom: 1px solid black;
+            width: 98%;
+            margin-left: 15px;
+           
+        }
+        table {
+            margin: 10px;
+            border-collapse: collapse;
+            width: 98%;
+        }
+        
+        th, td {
+            padding: 8px;
+            text-align: left;
+            width: 25%; 
+            vertical-align: middle; 
+        }        
+        
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        
+        tr:hover {
+            background-color: #ddd;
+        }
+        .content{
+            display: flex;
+            flex-direction:column ;
+        }
+        .c1, .c2, .c3, .c4, .c5, .c6{
+            height: 25px;
+            padding: 10px;
+            border: 1px solid black;
+        }
+
+        p{
+            padding-bottom: 20px;
+            margin: 0;
+        }
+
+        .c1{
+            background-color: rgb(170, 229, 134);
+        }
+        .c2{
+            background-color: rgb(134, 210, 229);
+        }
+
+        .c3, .c4{
+            background-color: rgb(229, 229, 134);
+        }
+
+        .c5, .c6{
+            background-color: rgb(229, 175, 134);
+        }
+
+        
+        
+
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <h1>LOGO</h1>
+        <div>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Messages<span style="border: 1px solid black;background-color:rgb(55, 202, 14);font-size: 12px; padding:2px;margin-left:2px;color:#f6f6f6">12</span></a></li>
+        </div>
+    </div>
+
+    <h1>Dashboard:</h1>
+    <div class="table">
+        <table>            
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Team</th>
+                    <th>All star</th>
+                    <th>Remove</th>
+                </tr>
+            </thead>            
+            <tbody>
+                <tr>
+                    <td>Steph</td>
+                    <td>Warriors</td>
+                    <td>Yes</td>
+                    <td><p style="color: rgb(255, 255, 255); border: 1px solid black; width: 12px; height:1px; background-color:red;">X</p></td>
+                </tr>
+                <tr>
+                    <td>Lebron</td>
+                    <td>Cavaliers</td>
+                    <td>Yes</td>
+                    <td><p style="color: rgb(255, 255, 255); border: 1px solid black; width: 12px; height:1px; background-color:red;">X</p></td>
+                </tr>
+                <tr>
+                    <td>Dwayne</td>
+                    <td>Heat</td>
+                    <td>Yes</td>
+                    <td><p style="color: rgb(255, 255, 255); border: 1px solid black; width: 12px; height:1px; background-color:red;">X</p></td>
+                </tr>
+                <tr>
+                    <td>Kobe</td>
+                    <td>Lakers</td>
+                    <td>Yes <span style="border: 1px solid black;background-color:rgb(227, 227, 128);font-size: 12px; padding:2px">Last</span></td>
+                    <td><p style="color: rgb(255, 255, 255); border: 1px solid black; width: 12px; height:1px; background-color:red;">X</p></td>
+                </tr>
+                <tr>
+                    <td>Isaiah</td>
+                    <td>Celtics</td>
+                    <td>Yes <span style="border: 1px solid black;background-color:rgb(181, 232, 144);font-size: 12px; padding:2px">First</span></td>
+                    <td><p style="color: rgb(255, 255, 255); border: 1px solid black; width: 12px; height:1px; background-color:red;">X</p></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+
+    <h1>Todos:</h1>
+    <div class="content">
+        <div class="c1">
+            <p>Feel good about Bootstrap.</p>
+        </div>
+        <div class="c2">
+            <p>Feel informed about Bootstrap.</p>
+        </div>
+        <div class="c3">
+            <p>Feel warmed about Bootstrap.</p>
+        </div>
+        <div class="c4">
+            <p>May I should read the docs.</p>
+        </div>
+        <div class="c5">
+            <p>Danger Zone</p>
+        </div>
+        <div class="c6">
+            <p>I really should read the docs.</p>
+        </div>
+    </div>
+    
+</body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        /* Custom styles can be added here if needed */
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">LOGO</a>
+        <div>
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">About us</a></li>
+            </ul>
+            <a class="nav-link" href="#">Messages <span class="badge badge-light">12</span></a>
+        </div>
+    </nav>
+
+    <!-- Dashboard Section -->
+    <div class="container mt-4">
+        <h1>Dashboard:</h1>
+        <div class="table-responsive">
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Team</th>
+                        <th>All star</th>
+                        <th>Remove</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Steph</td>
+                        <td>Warriors</td>
+                        <td>Yes</td>
+                        <td><span class="badge badge-danger">X</span></td>
+                    </tr>
+                    <!-- Add more table rows as needed -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- Todos Section -->
+    <div class="container mt-4">
+        <h1>Todos:</h1>
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="card">
+                    <div class="card-body">
+                        <p class="card-text">Feel good about Bootstrap.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Add more todo items as needed -->
+        </div>
+    </div>
+
+    <!-- Bootstrap JavaScript and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

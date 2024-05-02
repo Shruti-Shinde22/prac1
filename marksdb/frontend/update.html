@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" method="POST" onsubmit="onSubmit(event)">
+        <label>Enter roll number</label>
+        <input type="text" id="text">
+        <button type="submit">Update</button>
+    </form>
+
+    <script>
+        async function onSubmit(event){
+            event.preventDefault();
+            const docs = document.getElementById('text').value;
+            await fetch("http://localhost:3000/updateall",{
+                method:"PATCH",
+                headers: {
+                    "Content-Type":"application/json",
+                    "Accept":"application/json"
+                },
+                body: JSON.stringify({docs})
+            }).then(async res => {
+                const result = await res.json();
+            }).catch(err =>{
+                console.log('Error')
+                console.log(err)
+            })
+        }
+    </script>
+</body>
+</html>
